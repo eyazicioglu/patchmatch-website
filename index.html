@@ -1308,12 +1308,18 @@
 
       .advisors-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 14px;
         margin-top: 20px;
       }
 
-      @media (max-width: 620px) {
+      @media (max-width: 860px) {
+        .advisors-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 540px) {
         .advisors-grid {
           grid-template-columns: 1fr;
         }
@@ -2436,7 +2442,7 @@
             text-transform: uppercase;
           "
         >
-          Supervisor & expert advisor
+          Supervisor, expert advisor &amp; field advisor
         </p>
         <div class="advisors-grid">
           <div class="adv-card reveal">
@@ -2450,6 +2456,14 @@
             </div>
           </div>
           <div class="adv-card reveal rd1">
+            <div class="adv-avatar" style="background: var(--normal-g)">EÖ</div>
+            <div>
+              <h4>Ece Özoğul, M.D.</h4>
+              <p>Specialist Physician · Hacettepe University</p>
+              <span class="adv-tag at-exp" style="background: var(--normal-gl); color: var(--normal-g)">Field advisor</span>
+            </div>
+          </div>
+          <div class="adv-card reveal rd2">
             <div class="adv-avatar" style="background: var(--haema)">DK</div>
             <div>
               <h4>Deniz Katırcıoğlu-Öztürk, Ph.D.</h4>
