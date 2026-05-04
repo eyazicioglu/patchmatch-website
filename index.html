@@ -1104,6 +1104,27 @@
         color: var(--text-2);
       }
 
+      /* ── DEMO VIDEO ── */
+      #demo {
+        background: var(--bg-2);
+      }
+
+      .demo-video-wrap {
+        margin-top: 42px;
+        overflow: hidden;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: 0 8px 34px rgba(0, 0, 0, 0.07);
+      }
+
+      .demo-video-wrap video {
+        display: block;
+        width: 100%;
+        max-height: 680px;
+        background: #000;
+      }
+
       /* ── PROJECT ALBUM ── */
       #album {
         background: var(--bg);
@@ -1611,6 +1632,7 @@
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#how">Pipeline</a></li>
+          <li><a href="#demo">Demo</a></li>
           <li><a href="#album">Album</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#reports">Reports</a></li>
@@ -2057,6 +2079,30 @@
               completely decoupled and driven by localized CellViT data.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sdiv"></div>
+
+    <!-- ── DEMO VIDEO ── -->
+    <section id="demo">
+      <div class="container">
+        <div class="reveal">
+          <span class="label">Demo video</span>
+          <h2 class="section-title">
+            Watch PatchMatch<br /><em>in action</em>
+          </h2>
+          <p class="section-desc">
+            A short walkthrough of the application workflow, from exploring
+            whole-slide images to retrieving visually similar regions.
+          </p>
+        </div>
+        <div class="demo-video-wrap reveal rd1">
+          <video controls preload="metadata">
+            <source src="static/videos/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
